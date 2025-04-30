@@ -1,0 +1,118 @@
+body {
+    background-color: #F0F1F0;  /* Latar belakang */
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-family: 'The Seasons', serif;  /* Font untuk judul */
+    color: #29261D;  /* Warna teks judul */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #473C38;  /* Background kotak input */
+    color: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: #f2f2f2;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 0.8rem 1.5rem;
+    background-color: #5B4932;  /* Tombol */
+    color: #FFFFFF;  /* Warna tulisan tombol */
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #473C38;  /* Warna tombol saat hover */
+  }
+  
+  a {
+    color: #5B4932;  /* Warna link */
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #29261D;
+    font-weight: normal;
+  }
+  
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  #signupPassword {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    form {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Soulnotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/navbar.css">
+  <link rel="stylesheet" href="assets/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=The+Seasons&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Soulnotes</h1>
+    <p class="slogan">Notes from the soul, be heard</p>
+
+    <!-- Display Welcome Message -->
+    <p id="nicknameDisplay" style="font-size: 1.2rem; font-weight: bold; color: #29261D;"></p> <!-- Menambahkan elemen untuk menampilkan nickname -->
+
+    <div class="cta-buttons">
+      <button onclick="location.href='tell.html'">Tell Your Story</button>
+      <button onclick="location.href='send.html'">Send Motivation</button>
+    </div>
+  </section>
+
+  <!-- Motivational Gallery Section -->
+  <section id="gallerySection" class="gallery-section">
+    <h2>Motivational Gallery</h2>
+    <div class="gallery-container" id="galleryContainer"></div>
+  </section>
+
+  <!-- Chat Preview Section -->
+  <section class="chat-preview">
+    <h2>Need Someone to Talk To?</h2>
+    <div class="chat-box" onclick="location.href='chat.html'">
+      <p>Tap here to open your chat room</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Reach Us Out</h2>
+    <div class="contact-icons">
+      <a href="mailto:ursoulnotes@gmail.com" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+        <span>ursoulnotes@gmail.com</span>
+      </a>
+
+      <a href="https://instagram.com/ur.soulnotes" target="_blank" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 4H9.172A5.172 5.172 0 004 9.172v5.656A5.172 5.172 0 009.172 20h5.656A5.172 5.172 0 0020 14.828V9.172A5.172 5.172 0 0014.828 4z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 8.25h.008v.008h-.008zM12 15a3 3 0 100-6 3 3 0 000 6z" />
+        </svg>
+        <span>@ur.soulnotes</span>
+      </a>
+    </div>
+  </section>
+
+  <script type="module" src="assets/navbar.js"></script>
+  <script type="module" src="assets/dashboard.js"></script>
+
+  <script>
+    // Cek jika nickname sudah ada di localStorage
+    const nickname = localStorage.getItem("nickname");
+
+    if (!nickname) {
+      // Jika nickname belum ada, redirect ke login.html
+      window.location.href = "login.html"; // Redirect ke halaman login
+    } else {
+      // Menampilkan nickname di dashboard setelah halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        const nicknameDisplay = document.getElementById("nicknameDisplay");
+
+        if (nicknameDisplay) {
+          nicknameDisplay.textContent = `Welcome, ${nickname}!`;
+        } else {
+          console.error("Elemen dengan ID 'nicknameDisplay' tidak ditemukan!");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

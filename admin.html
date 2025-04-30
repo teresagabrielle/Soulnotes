@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Chat</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/admin-chat.css">
+  <link rel="stylesheet" href="assets/navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=The+Seasons&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar"></div>
+  <div class="chat-room">
+    <h1 class="title">Admin Chat</h1>
+    <div class="chat-box" id="messages"></div>
+    <div class="chat-input">
+      <textarea id="adminInput" placeholder="Type your reply..."></textarea>
+      <button onclick="sendReply()">Send</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="assets/navbar.js"></script>
+  <script src="assets/admin-chat.js"></script>
+</body>
+</html>

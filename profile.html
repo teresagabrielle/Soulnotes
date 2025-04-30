@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile - Soulnotes</title>
+  <link rel="stylesheet" href="assets/profile.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Your Profile</h1>
+    
+    <div class="field">
+      <label>Nickname</label>
+      <p id="nicknameDisplay"></p>
+      <input type="text" id="nicknameInput" placeholder="New nickname" style="display: none;" />
+      <button id="editNicknameBtn">Edit Nickname</button>
+    </div>
+
+    <div class="field">
+      <label>Gender</label>
+      <p id="genderDisplay"></p>
+    </div>
+
+    <div class="field">
+      <label>Birthdate</label>
+      <p id="birthDisplay"></p>
+    </div>
+
+    <div class="field">
+      <label>Change Password</label>
+      <input type="password" id="newPassword" placeholder="New Password (min 8 chars)" />
+      <button id="changePassBtn">Change Password</button>
+    </div>
+    
+    <button id="saveNicknameBtn" style="display: none;">Save Nickname</button>
+  </div>
+
+  <script type="module" src="assets/profile.js"></script>
+</body>
+</html>

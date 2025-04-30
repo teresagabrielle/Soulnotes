@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+  padding-top: 80px; /* Supaya konten gak ketiban navbar */
+  background-color: #F0F1F0; /* Latar belakang halaman */
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Kontainer utama untuk Send Page */
+.send-container {
+  background-color: #473C38; /* Kotak motivational */
+  color: #FFFFFF;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 20px;  /* Menambahkan margin untuk jarak dengan tepi */
+}
+
+/* Judul Halaman */
+.send-container h1 {
+  font-family: 'The Seasons', serif; /* Font untuk judul */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Label untuk form input */
+.send-container label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+/* Input dan textarea form */
+.send-container input,
+.send-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;  /* Menambahkan border */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;  /* Background putih untuk input */
+}
+
+/* Khusus textarea */
+.send-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Tombol utama */
+.send-container button {
+  padding: 0.8rem 1.5rem;
+  background-color: #5B4932; /* Tombol dengan warna utama */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;  /* Tombol lebih lebar dan responsif */
+}
+
+/* Warna tombol saat hover */
+.send-container button:hover {
+  background-color: #473C38;
+}
+
+/* Responsive tweak untuk perangkat kecil */
+@media (max-width: 480px) {
+  .send-container {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .send-container h1 {
+    font-size: 1.5rem; /* Ukuran font judul lebih kecil pada layar kecil */
+  }
+
+  .send-container button {
+    width: 100%; /* Tombol menjadi lebar penuh */
+  }
+}

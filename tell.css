@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F1F0;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tell-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.tell-container h1 {
+  font-family: 'The Seasons', serif;
+  color: #29261D;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.tell-container textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 150px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.choice-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.choice-buttons button {
+  padding: 0.8rem;
+  background-color: #5B4932;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.choice-buttons button:hover {
+  background-color: #473C38;
+}
+
+#storyForm button {
+  padding: 0.8rem 1.2rem;
+  background-color: #5B9BD5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#storyForm button:hover {
+  background-color: #4a8ac6;
+}
+
+#options p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #29261D;
+}
+
+.choice-buttons button {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tell Your Story</title>
+  <link rel="stylesheet" href="assets/tell.css" />
+</head>
+<body>
+  <div class="tell-container">
+    <h1 class="title">Tell Your Story</h1>
+    <form id="storyForm">
+      <label for="story">Your Story:</label>
+      <textarea id="story" required placeholder="Feel free to tell your story..."></textarea>
+      <button type="submit">Next</button>
+    </form>
+    <div id="options" style="display:none;">
+      <p>What do you need?</p>
+      <button class="small" onclick="saveAsDraft()">Just wanna write it out</button>
+      <button class="small" onclick="goToChat()">Need someone to talk to</button>
+    </div>
+  </div>
+
+  <script type="module" src="assets/tell.js"></script>
+</body>
+</html>

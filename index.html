@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome - Soulnotes</title>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBLICV8UAmHfFLY2_pF3Ha5hrC2mOI7R-E",
+      authDomain: "soulnotes-854c7.firebaseapp.com",
+      databaseURL: "https://soulnotes-854c7-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "soulnotes-854c7",
+      storageBucket: "soulnotes-854c7.firebasestorage.app",
+      messagingSenderId: "252319801921",
+      appId: "1:252319801921:web:bc3cb02e0f9de57182dcc0",
+      measurementId: "G-CV7WHY8NKL"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+  <h1>Welcome to Soulnotes</h1>
+  <button id="continueAsAnonymousBtn">Continue as Anonymous</button> <!-- Anonymous -->
+  <button id="loginAdminBtn">Login (For Admin Only)</button> <!-- Admin Login -->
+
+  <script type="module" src="assets/index.js"></script>
+</body>
+</html>

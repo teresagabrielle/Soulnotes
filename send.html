@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Send a Motivational Note</title>
+  <link rel="stylesheet" href="assets/send.css" />
+</head>
+<body>
+  <div class="send-container">
+    <h1 class="title">Send Motivation</h1>
+    <form id="sendForm">
+      <label for="to">To (optional):</label>
+      <input type="text" id="to" />
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" required></textarea>
+
+      <label for="from">From (optional):</label>
+      <input type="text" id="from" />
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script type="module" src="assets/send.js"></script>
+</body>
+</html>

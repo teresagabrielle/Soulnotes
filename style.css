@@ -1,0 +1,36 @@
+
+body {
+  padding-top: 90px; /* Supaya konten gak ketiban navbar */
+  background-color: #F0F1F0;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+
+.hidden { display: none; }
+textarea, input {
+  padding-top: 80px; /* harusnya sama/lebih dari tinggi navbar */  
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary { background-color: #4f46e5; }
+.btn-secondary { background-color: #6b7280; }
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card small { color: gray; }
+

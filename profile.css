@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #F0F1F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'The Seasons', serif;
+  text-align: center;
+  color: #29261D;
+  margin-bottom: 2rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  color: #29261D;
+}
+
+p {
+  color: #29261D;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background-color: #5B4932;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+input[type="password"] {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,92 @@
+body {
+    background-color: #F0F1F0;  /* Latar belakang */
+    font-family: 'DM Sans', sans-serif; /* Font umum */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'The Seasons', serif;  /* Font untuk judul */
+    color: #29261D;  /* Warna teks judul */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    background-color: #473C38;  /* Background kotak input */
+    color: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: #f2f2f2;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.5rem; /* Memberikan jarak antara input dan tombol */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 0.8rem 1.5rem;
+    background-color: #5B4932;  /* Warna tombol */
+    color: #FFFFFF;  /* Warna tulisan di tombol */
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #473C38;  /* Warna tombol saat hover */
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #29261D;
+  }
+  
+  a {
+    color: #5B4932;  /* Warna link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #473C38; /* Warna link saat hover */
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  

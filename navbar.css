@@ -1,0 +1,51 @@
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C2B19C; /* Warna latar belakang navbar */
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.navbar-logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #29261D;  /* Warna teks navbar yang gelap dan kontras */
+  transition: color 0.3s ease; /* Menambahkan efek transisi warna */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #0D0B08; /* Warna saat hover, lebih gelap */
+}
+
+/* Mengatur tampilan link yang akan ditampilkan atau disembunyikan */
+#profileLink {
+  display: none;  /* Secara default disembunyikan */
+}
+
+#loginLink {
+  display: none;  /* Secara default disembunyikan */
+}
